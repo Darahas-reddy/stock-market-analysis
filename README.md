@@ -13,9 +13,9 @@ It includes data collection, cleaning, visualization, and basic machine learning
 stock-market-analysis/
 │
 ├── notebooks/
-│   ├── 01_data_analysis.ipynb
-│   ├── 02_visualization.ipynb
-│   └── 03_ml_prediction.ipynb
+│   ├── data_analysis.ipynb
+│   ├── visualization.ipynb
+│   └── ml_prediction.ipynb
 │
 ├── images/
 │   ├── moving_avg.png
