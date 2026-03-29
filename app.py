@@ -2,13 +2,12 @@ import streamlit as st
 import yfinance as yf
 import pandas as pd
 import datetime
-
 st.set_page_config(page_title="Stock Dashboard", layout="wide")
 
 st.title("📈 Stock Market Analysis Dashboard")
+st.markdown("### 🚀 Analyze stock trends, volatility, and performance easily")
 
 stock = st.sidebar.selectbox("Select Stock", ["AAPL", "TSLA", "GOOGL"])
-
 start_date = st.sidebar.date_input("Start Date", datetime.date(2022, 1, 1))
 end_date = st.sidebar.date_input("End Date", datetime.date(2024, 1, 1))
 
@@ -18,11 +17,25 @@ if isinstance(data.columns, pd.MultiIndex):
     data.columns = data.columns.get_level_values(0)
 
 if data.empty:
-    st.error("No data found")
+    st.error("No data found. Try different dates.")
     st.stop()
+
+if 'Close' not in data.columns:
+    st.error("Data loading issue.")
+    st.stop()
+
+st.subheader("📌 Key Summary")
+
+latest_price = data['Close'].iloc[-1]
+avg_price = data['Close'].mean()
+
+col1, col2 = st.columns(2)
+col1.metric("Latest Price", f"${latest_price:.2f}")
+col2.metric("Average Price", f"${avg_price:.2f}")
 
 st.subheader("📊 Closing Price")
 st.line_chart(data['Close'])
+
 data['MA50'] = data['Close'].rolling(50).mean()
 data['MA200'] = data['Close'].rolling(200).mean()
 
@@ -36,11 +49,15 @@ st.line_chart(data['Returns'])
 
 st.subheader("📊 Insight")
 
-latest_return = data['Returns'].mean()
+volatility = data['Returns'].std()
 
-if latest_return > 0:
-    st.success("Stock shows positive average returns 📈")
+if volatility > 0.02:
+    st.warning("High volatility → High risk ⚠️")
 else:
-    st.warning("Stock shows negative or unstable returns 📉")
+    st.success("Low volatility → Stable stock ✅")
 
-st.success("Dashboard Loaded Successfully 🚀")
+if 'Volume' in data.columns:
+    st.subheader("📊 Volume")
+    st.line_chart(data['Volume'])
+
+st.success("🚀 Dashboard Loaded Successfully")
