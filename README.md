@@ -131,15 +131,15 @@ Among the analyzed stocks, **TSLA stands out as the most volatile**, offering hi
 stock-market-analysis/
 │
 ├── notebooks/
-│   ├── 01_data_analysis.ipynb
-│   ├── 02_visualization.ipynb
-│   └── 03_ml_prediction.ipynb
+│   ├── data_analysis.ipynb
+│   ├── visualization.ipynb
+│   └── ml_prediction.ipynb
 │
 ├── images/
-│   ├── moving_avg.png
+│   ├── moving_average.png
 │   ├── returns.png
-│   ├── heatmap.png
-│   └── candlestick.png
+│   ├── corelation_heatmap.png
+│   └── candlestick_chart.png
 │
 ├── README.md
 └── requirements.txt
