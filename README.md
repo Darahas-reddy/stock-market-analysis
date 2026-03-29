@@ -8,6 +8,10 @@ Stock market data is highly dynamic and complex, making it difficult for investo
 This project aims to analyze historical stock data to uncover insights related to **trend, volatility, correlation, and risk**, using data analysis and visualization techniques.
 
 ---
+## 🌐 Live Demo
+[Click here to view project](https://stock-market-analysis-lqcd2jpuzjydugfmwmmwyh.streamlit.app/)
+
+---
 
 ## 📊 Dataset
 
