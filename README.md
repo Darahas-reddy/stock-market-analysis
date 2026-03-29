@@ -4,9 +4,9 @@
 This project analyzes stock market data using Python to identify trends, risk, and investment insights.
 
 ## 📊 Notebooks
-- 01_data_analysis.ipynb → Data cleaning & EDA
-- 02_visualization.ipynb → Charts & insights
-- 03_ml_prediction.ipynb → Machine learning model
+- data_analysis.ipynb → Data cleaning & EDA
+- visualization.ipynb → Charts & insights
+- ml_prediction.ipynb → Machine learning model
 
 ## 🛠 Tools Used
 - Python
