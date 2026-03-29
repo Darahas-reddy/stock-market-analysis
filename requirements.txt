@@ -5,3 +5,4 @@ seaborn
 yfinance
 scikit-learn
 mplfinance
+streamlit
