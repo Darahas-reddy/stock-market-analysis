@@ -49,7 +49,7 @@ This project aims to analyze historical stock data to uncover insights related t
 
 ### 📈 Moving Average Analysis
 
-![Moving Average](images/moving_avg.png)
+![Moving Average](images/moving_average.png)
 
 This chart shows the **50-day and 200-day moving averages**, which help identify long-term trends.
 The upward movement indicates consistent growth, while crossovers suggest potential trading signals.
@@ -67,7 +67,7 @@ Higher fluctuations indicate more uncertainty in stock performance.
 
 ### 📊 Correlation Heatmap
 
-![Heatmap](images/heatmap.png)
+![Heatmap](images/corelation_heatmap.png)
 
 The heatmap shows relationships between stocks.
 Strong positive correlation suggests that tech stocks often move together, reducing diversification benefits.
@@ -76,7 +76,7 @@ Strong positive correlation suggests that tech stocks often move together, reduc
 
 ### 📉 Candlestick Chart
 
-![Candlestick](images/candlestick.png)
+![Candlestick](images/candlestick_chart.png)
 
 Candlestick charts provide detailed insight into **price movements within a time period**, including opening, closing, high, and low prices.
 
