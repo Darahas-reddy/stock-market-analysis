@@ -9,7 +9,7 @@ This project aims to analyze historical stock data to uncover insights related t
 
 ---
 ## 🌐 Live Demo
-[Click here to view project](https://stock-market-analysis-lqcd2jpuzjydugfmwmmwyh.streamlit.app/)
+[Click here to view DashBoard](https://stock-market-analysis-lqcd2jpuzjydugfmwmmwyh.streamlit.app/)
 
 ---
 
